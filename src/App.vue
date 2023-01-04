@@ -3,7 +3,9 @@
     <p>This is a test</p>
   </div>
   <div>
-    {{pokemons}}
+    <ul>
+      <li v-for="(pokemon, index) in pokemons.results" :key="index"> {{pokemon}} </li>
+    </ul>
   </div>
 </template>
 
